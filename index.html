@@ -422,6 +422,7 @@ section{position:relative}
   </div>
 </section>
 
+
 <!-- ============================== COMPARE ============================== -->
 <section class="compare-sec pad" id="compare">
   <div class="rv">
@@ -430,39 +431,133 @@ section{position:relative}
     <div class="sh-line"></div>
   </div>
 
-  <div class="rv" style="margin-top:28px">
-    <!-- Header -->
-    <div style="display:grid;grid-template-columns:1.2fr 0.8fr 0.8fr 1.2fr 0.8fr;gap:0;padding:10px 18px;border-bottom:1px solid rgba(158,103,82,.25)">
-      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--terra)">Plano</span>
-      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--terra)">Posts/mês</span>
-      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--terra)">Custo/post</span>
-      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--terra)">Gestão técnica</span>
-      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--terra);text-align:right">Investimento</span>
+  <!-- DESKTOP: tabela elegante -->
+  <div class="rv" style="margin-top:28px;border-radius:16px;overflow:hidden;border:1px solid rgba(158,103,82,.15)">
+
+    <!-- Cabeçalho -->
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1.8fr 1.2fr;padding:13px 24px;background:rgba(158,103,82,.08);border-bottom:1px solid rgba(158,103,82,.2)">
+      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--terra)">Plano</span>
+      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--terra)">Posts/mês</span>
+      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--terra)">Custo/post</span>
+      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--terra)">Gestão técnica</span>
+      <span style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2.5px;text-transform:uppercase;color:var(--terra);text-align:right">Investimento</span>
     </div>
+
     <!-- Presença -->
-    <div style="display:grid;grid-template-columns:1.2fr 0.8fr 0.8fr 1.2fr 0.8fr;gap:0;padding:16px 18px;border-bottom:1px solid rgba(254,215,165,.04);align-items:center">
-      <span style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Presença</span>
-      <span style="font-size:13px;color:var(--sage)">8 posts</span>
-      <span style="font-size:13px;color:var(--sage)">R$ 156,25</span>
-      <span style="font-size:13px;color:var(--sage)">Orgânico + Direção</span>
-      <span style="font-family:'Playfair Display',serif;font-size:17px;color:var(--cream);text-align:right">R$ 1.250</span>
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1.8fr 1.2fr;padding:22px 24px;align-items:center;border-bottom:1px solid rgba(254,215,165,.05);transition:background .3s" onmouseover="this.style.background='rgba(254,215,165,.02)'" onmouseout="this.style.background='transparent'">
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Presença</div>
+        <div style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);opacity:.4;margin-top:3px">Plano A</div>
+      </div>
+      <div style="font-size:13px;color:var(--sage)">8 posts</div>
+      <div style="font-size:13px;color:var(--sage)">R$ 156,25</div>
+      <div><span style="font-family:'Outfit',sans-serif;font-size:9px;background:rgba(115,118,106,.1);color:var(--sage);padding:5px 12px;border-radius:20px;white-space:nowrap">Orgânico + Direção</span></div>
+      <div style="text-align:right">
+        <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--cream)">R$ 1.250</div>
+        <div style="font-size:9px;color:var(--sage);opacity:.4;margin-top:2px">/mês</div>
+      </div>
     </div>
-    <!-- Crescimento (destacado) -->
-    <div style="display:grid;grid-template-columns:1.2fr 0.8fr 0.8fr 1.2fr 0.8fr;gap:0;padding:16px 18px;border-bottom:1px solid rgba(254,215,165,.04);align-items:center;background:rgba(158,103,82,.06);border-radius:8px">
-      <span style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Crescimento</span>
-      <span style="font-size:13px;color:var(--cream)">12 posts</span>
-      <span style="font-size:13px;color:var(--cream)">R$ 204,16</span>
-      <span style="font-size:13px;color:var(--cream)">Tráfego Pago (Meta)</span>
-      <span style="font-family:'Playfair Display',serif;font-size:17px;color:var(--cream);text-align:right">R$ 2.450</span>
+
+    <!-- Crescimento (destaque) -->
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1.8fr 1.2fr;padding:22px 24px;align-items:center;border-bottom:1px solid rgba(254,215,165,.05);background:rgba(158,103,82,.07);position:relative">
+      <div style="position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--terra)"></div>
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Crescimento</div>
+        <div style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--terra);opacity:.9;margin-top:3px">⭐ Recomendado</div>
+      </div>
+      <div style="font-size:13px;color:var(--cream);opacity:.85">12 posts</div>
+      <div style="font-size:13px;color:var(--cream);opacity:.85">R$ 204,16</div>
+      <div><span style="font-family:'Outfit',sans-serif;font-size:9px;background:rgba(158,103,82,.2);color:var(--terra);padding:5px 12px;border-radius:20px;white-space:nowrap">Tráfego Pago (Meta)</span></div>
+      <div style="text-align:right">
+        <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--cream)">R$ 2.450</div>
+        <div style="font-size:9px;color:var(--sage);opacity:.4;margin-top:2px">/mês</div>
+      </div>
     </div>
+
     <!-- Autoridade -->
-    <div style="display:grid;grid-template-columns:1.2fr 0.8fr 0.8fr 1.2fr 0.8fr;gap:0;padding:16px 18px;align-items:center">
-      <span style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Autoridade</span>
-      <span style="font-size:13px;color:var(--sage)">18 posts</span>
-      <span style="font-size:13px;color:var(--sage)">R$ 250,00</span>
-      <span style="font-size:13px;color:var(--sage)">Full Stack + Automação</span>
-      <span style="font-family:'Playfair Display',serif;font-size:17px;color:var(--cream);text-align:right">R$ 4.500</span>
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1.8fr 1.2fr;padding:22px 24px;align-items:center;transition:background .3s" onmouseover="this.style.background='rgba(254,215,165,.02)'" onmouseout="this.style.background='transparent'">
+      <div>
+        <div style="font-family:'Playfair Display',serif;font-size:15px;color:var(--cream)">Autoridade</div>
+        <div style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);opacity:.4;margin-top:3px">Premium</div>
+      </div>
+      <div style="font-size:13px;color:var(--sage)">18 posts</div>
+      <div style="font-size:13px;color:var(--sage)">R$ 250,00</div>
+      <div><span style="font-family:'Outfit',sans-serif;font-size:9px;background:rgba(45,67,84,.35);color:var(--cream);opacity:.7;padding:5px 12px;border-radius:20px;white-space:nowrap">Full Stack + Automação</span></div>
+      <div style="text-align:right">
+        <div style="font-family:'Playfair Display',serif;font-size:18px;color:var(--cream)">R$ 4.500</div>
+        <div style="font-size:9px;color:var(--sage);opacity:.4;margin-top:2px">/mês</div>
+      </div>
     </div>
+  </div>
+
+  <!-- MOBILE: cards empilhados (aparece apenas em telas menores) -->
+  <style>
+    @media(min-width:681px){.cmp-mobile{display:none!important}}
+    @media(max-width:680px){.cmp-desktop{display:none!important}.cmp-mobile{display:flex!important}}
+  </style>
+
+  <div class="cmp-desktop"></div>
+
+  <div class="cmp-mobile rv" style="flex-direction:column;gap:12px;margin-top:28px">
+
+    <!-- Card Presença -->
+    <div style="border:1px solid rgba(254,215,165,.08);border-radius:14px;padding:22px;background:rgba(254,215,165,.01)">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px">
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream)">Presença</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);opacity:.4;margin-top:4px">Plano A</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream)">R$ 1.250</div>
+          <div style="font-size:9px;color:var(--sage);opacity:.4;margin-top:2px">/mês</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="font-size:10px;color:var(--sage);background:rgba(255,255,255,.04);padding:5px 12px;border-radius:20px">8 posts/mês</span>
+        <span style="font-size:10px;color:var(--sage);background:rgba(255,255,255,.04);padding:5px 12px;border-radius:20px">R$ 156,25/post</span>
+        <span style="font-size:10px;color:var(--sage);background:rgba(255,255,255,.04);padding:5px 12px;border-radius:20px">Orgânico + Direção</span>
+      </div>
+    </div>
+
+    <!-- Card Crescimento -->
+    <div style="border:1px solid rgba(158,103,82,.3);border-radius:14px;padding:22px;background:rgba(158,103,82,.07);position:relative;overflow:hidden">
+      <div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--terra)"></div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px">
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream)">Crescimento</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--terra);margin-top:4px">⭐ Recomendado</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream)">R$ 2.450</div>
+          <div style="font-size:9px;color:var(--sage);opacity:.4;margin-top:2px">/mês</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="font-size:10px;color:var(--cream);opacity:.7;background:rgba(255,255,255,.06);padding:5px 12px;border-radius:20px">12 posts/mês</span>
+        <span style="font-size:10px;color:var(--cream);opacity:.7;background:rgba(255,255,255,.06);padding:5px 12px;border-radius:20px">R$ 204,16/post</span>
+        <span style="font-size:10px;color:var(--terra);background:rgba(158,103,82,.2);padding:5px 12px;border-radius:20px">Tráfego Pago (Meta)</span>
+      </div>
+    </div>
+
+    <!-- Card Autoridade -->
+    <div style="border:1px solid rgba(254,215,165,.08);border-radius:14px;padding:22px;background:rgba(254,215,165,.01)">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px">
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:20px;color:var(--cream)">Autoridade</div>
+          <div style="font-family:'Outfit',sans-serif;font-size:8px;letter-spacing:2px;text-transform:uppercase;color:var(--sage);opacity:.4;margin-top:4px">Premium</div>
+        </div>
+        <div style="text-align:right">
+          <div style="font-family:'Playfair Display',serif;font-size:22px;color:var(--cream)">R$ 4.500</div>
+          <div style="font-size:9px;color:var(--sage);opacity:.4;margin-top:2px">/mês</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <span style="font-size:10px;color:var(--sage);background:rgba(255,255,255,.04);padding:5px 12px;border-radius:20px">18 posts/mês</span>
+        <span style="font-size:10px;color:var(--sage);background:rgba(255,255,255,.04);padding:5px 12px;border-radius:20px">R$ 250,00/post</span>
+        <span style="font-size:10px;color:var(--sage);background:rgba(255,255,255,.04);padding:5px 12px;border-radius:20px">Full Stack + Automação</span>
+      </div>
+    </div>
+
   </div>
 
   <div class="rv" style="margin-top:32px;text-align:center">
